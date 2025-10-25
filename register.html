@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - EduNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page-bg">
+
+    <div class="login-wrapper">
+        <a href="index.html" class="logo text-center">EduNova</a>
+        <div class="login-card">
+            <h2>Создайте новый аккаунт</h2>
+            <p>Присоединяйтесь к нашему сообществу!</p>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Алексей Иванов">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required placeholder="Минимум 8 символов">
+                </div>
+                 <div class="form-group">
+                    <label for="confirm-password">Подтвердите пароль</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="••••••••">
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="terms" required> Я согласен с <a href="#">Условиями</a>
+                    </label>
+                </div>
+                <!-- При клике имитируем регистрацию и перенаправляем на страницу профиля -->
+                <a href="profile.html" class="btn btn-primary full-width">Зарегистрироваться</a>
+            </form>
+            <p class="signup-link">
+                Уже есть аккаунт? <a href="login.html">Войти</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
