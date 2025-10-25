@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесты - Проверь свои знания - EduNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html" class="logo">EduNova</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="tests.html">Тесты</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-secondary">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1>🧩 Интерактивные тесты</h1>
+                <p>Закрепите полученные знания и проверьте себя.</p>
+            </div>
+        </section>
+
+        <!-- Секция с тестом -->
+        <section class="tests-section standalone-tests">
+            <div class="container">
+                <h2 class="section-title fade-in">Тест по основам Веб-разработки</h2>
+                <div id="quiz-container" class="quiz-card fade-in">
+                    <h3 id="question-text">Загрузка вопроса...</h3>
+                    <div id="answers-buttons" class="answers-grid">
+                        <!-- Кнопки для ответов будут сгенерированы JS -->
+                    </div>
+                    <button id="next-btn" class="btn btn-primary">Следующий вопрос</button>
+                </div>
+                <div id="result-container" class="quiz-card result-card fade-in" style="display: none;">
+                    <h3>Ваш результат</h3>
+                    <p id="result-text"></p>
+                    <button id="restart-btn" class="btn btn-primary">Пройти еще раз</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 EduNova | <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
