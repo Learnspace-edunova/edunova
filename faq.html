@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Часто задаваемые вопросы - EduNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html" class="logo">EduNova</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <a href="login.html" class="btn btn-secondary">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1>❓ Часто задаваемые вопросы</h1>
+                <p>Здесь собраны ответы на самые популярные вопросы о нашей платформе.</p>
+            </div>
+        </section>
+
+        <!-- Секция FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-accordion">
+                    <!-- Вопрос 1 -->
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>Как начать обучение на платформе?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Для начала обучения просто выберите интересующий вас курс на странице "Курсы", нажмите "Подробнее", а затем "Начать обучение". Если вы новый пользователь, вам будет предложено зарегистрироваться.</p>
+                        </div>
+                    </div>
+                    <!-- Вопрос 2 -->
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>Выдаются ли сертификаты после окончания курсов?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да, после успешного завершения большинства курсов и сдачи итогового теста вы получите электронный сертификат. Его можно будет скачать в формате PDF в вашем личном профиле.</p>
+                        </div>
+                    </div>
+                    <!-- Вопрос 3 -->
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>Могу ли я проходить несколько курсов одновременно?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Конечно! Вы можете записаться на любое количество курсов и проходить их в удобном для вас темпе. Все активные курсы будут отображаться в вашем профиле.</p>
+                        </div>
+                    </div>
+                    <!-- Вопрос 4 -->
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                           <span>Что делать, если у меня возникли технические проблемы?</span>
+                           <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                           <p>Если у вас возникли трудности, пожалуйста, свяжитесь с нами через форму обратной связи на странице "Контакты". Наша команда поддержки постарается помочь вам как можно скорее.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 EduNova | <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Скрипт для работы аккордеона на странице FAQ
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.faq-icon');
+
+                button.classList.toggle('active');
+
+                if (button.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.textContent = '−';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
