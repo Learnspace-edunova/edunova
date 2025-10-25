@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNova - Учись, развивайся и достигай успеха</title>
+    <!-- Подключение шрифта Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#" class="logo">EduNova</a>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#popular-courses">Курсы</a></li>
+                    <li><a href="#tests">Тесты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Приветственный блок -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>👋 Приветствуем в EduNova!</h1>
+                <p>Учись, развивайся и достигай успеха.</p>
+                <div class="hero-buttons">
+                    <a href="#popular-courses" class="btn btn-primary">Начать обучение</a>
+                    <a href="#popular-courses" class="btn btn-outline">Посмотреть курсы</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок преимуществ -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="feature-card fade-in">
+                    <div class="icon">📘</div>
+                    <h3>100+ курсов</h3>
+                    <p>Доступ к обширной библиотеке знаний.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="icon">🧩</div>
+                    <h3>Интерактивные тесты</h3>
+                    <p>Проверяйте свои знания и закрепляйте материал.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="icon">🏆</div>
+                    <h3>Сертификаты</h3>
+                    <p>Получайте подтверждение своих достижений.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные курсы -->
+        <section id="popular-courses" class="popular-courses">
+            <div class="container">
+                <h2 class="section-title fade-in">Популярные курсы</h2>
+                <div class="courses-grid">
+                    <!-- Карточка курса 1 -->
+                    <div class="course-card fade-in">
+                        <img src="https://placehold.co/600x400/4F46E5/FFFFFF?text=💻" alt="Веб-разработка">
+                        <div class="card-content">
+                            <h3>Веб-разработка</h3>
+                            <p>12 уроков</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Карточка курса 2 -->
+                    <div class="course-card fade-in">
+                        <img src="https://placehold.co/600x400/22C55E/FFFFFF?text=🎨" alt="Дизайн">
+                        <div class="card-content">
+                            <h3>Графический дизайн</h3>
+                            <p>9 уроков</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                    <!-- Карточка курса 3 -->
+                    <div class="course-card fade-in">
+                        <img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=🧮" alt="Математика">
+                        <div class="card-content">
+                            <h3>Математика</h3>
+                            <p>15 уроков</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                     <!-- Карточка курса 4 -->
+                    <div class="course-card fade-in">
+                        <img src="https://placehold.co/600x400/EF4444/FFFFFF?text=🧠" alt="Психология">
+                        <div class="card-content">
+                            <h3>Психология</h3>
+                            <p>7 уроков</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn-outline">Посмотреть все курсы</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с тестами -->
+        <section id="tests" class="tests-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Проверь свои знания</h2>
+                <div id="quiz-container" class="quiz-card fade-in">
+                    <h3 id="question-text">Загрузка вопроса...</h3>
+                    <div id="answers-buttons" class="answers-grid">
+                        <!-- Кнопки для ответов будут сгенерированы JS -->
+                    </div>
+                    <button id="next-btn" class="btn btn-primary">Следующий вопрос</button>
+                </div>
+                <div id="result-container" class="quiz-card result-card fade-in" style="display: none;">
+                    <h3>Ваш результат</h3>
+                    <p id="result-text"></p>
+                    <button id="restart-btn" class="btn btn-primary">Пройти еще раз</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 EduNova | <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+        </div>
+    </footer>
+
+    <!-- Подключение скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
