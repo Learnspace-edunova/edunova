@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-разработка - EduNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html" class="logo">EduNova</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="index.html#tests">Тесты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-detail">
+            <div class="container">
+                <div class="course-detail-grid">
+                    <!-- Левая часть: видео и описание -->
+                    <div class="course-content fade-in">
+                        <h1>💻 Веб-разработка для начинающих</h1>
+                        <p class="course-author">Автор: Иван Петров</p>
+
+                        <div class="video-placeholder">
+                            <!-- Заглушка для видео, можно вставить iframe с YouTube -->
+                            <img src="https://placehold.co/800x450/1F2937/FFFFFF?text=Видео+урок" alt="Видео урока">
+                        </div>
+
+                        <h2>Описание курса</h2>
+                        <p>Этот курс — ваш первый шаг в мир веб-разработки. Вы изучите основы HTML, CSS и JavaScript, научитесь создавать адаптивные и интерактивные сайты с нуля. В конце курса вы создадите свой собственный проект-портфолио.</p>
+                        
+                        <h2>Программа курса</h2>
+                        <ul class="curriculum-list">
+                            <li><span>Урок 1:</span> Введение в HTML. Структура документа.</li>
+                            <li><span>Урок 2:</span> Основные теги HTML и семантика.</li>
+                            <li><span>Урок 3:</span> Введение в CSS. Синтаксис и селекторы.</li>
+                            <li><span>Урок 4:</span> Блочная модель и Flexbox.</li>
+                            <li><span>Урок 5:</span> Адаптивная верстка с Media Queries.</li>
+                            <li><span>Урок 6:</span> Основы JavaScript. Переменные и типы данных.</li>
+                            <li>... и еще 6 уроков</li>
+                        </ul>
+                    </div>
+                    <!-- Правая часть: карточка с информацией -->
+                    <div class="course-sidebar fade-in">
+                        <div class="course-info-card">
+                            <h3>Информация о курсе</h3>
+                            <ul>
+                                <li><strong>Уроков:</strong> 12</li>
+                                <li><strong>Длительность:</strong> ~20 часов</li>
+                                <li><strong>Уровень:</strong> Начинающий</li>
+                                <li><strong>Доступ:</strong> Навсегда</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary full-width">Начать обучение</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 EduNova | <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
