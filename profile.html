@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой профиль - EduNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="index.html" class="logo">EduNova</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="index.html#tests">Тесты</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+                <!-- Вместо "Войти" теперь иконка профиля -->
+                <a href="profile.html" class="profile-link">👤 Мой профиль</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <div class="container">
+                <!-- Заголовок профиля -->
+                <div class="profile-header fade-in">
+                    <img src="https://placehold.co/120x120/4F46E5/FFFFFF?text=A" alt="Аватар" class="profile-avatar">
+                    <div class="profile-info">
+                        <h1>Алексей Иванов</h1>
+                        <p>alexey.ivanov@example.com</p>
+                    </div>
+                </div>
+
+                <!-- Статистика -->
+                <div class="profile-stats fade-in">
+                    <div class="stat-card">
+                        <h3>Пройдено курсов</h3>
+                        <p>4</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Набрано очков</h3>
+                        <p>1,250</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Сертификаты</h3>
+                        <p>2</p>
+                    </div>
+                </div>
+
+                <!-- Основной контент профиля с табами -->
+                <div class="profile-content fade-in">
+                    <div class="tabs">
+                        <button class="tab-link active" onclick="openTab(event, 'my-courses')">Мои курсы</button>
+                        <button class="tab-link" onclick="openTab(event, 'my-certificates')">Мои сертификаты</button>
+                    </div>
+
+                    <!-- Контент таба "Мои курсы" -->
+                    <div id="my-courses" class="tab-content" style="display: block;">
+                        <div class="courses-grid">
+                            <!-- Карточка пройденного курса -->
+                            <div class="course-card">
+                                <img src="https://placehold.co/600x400/4F46E5/FFFFFF?text=💻" alt="Веб-разработка">
+                                <div class="card-content">
+                                    <h3>Веб-разработка</h3>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar" style="width: 100%;"></div>
+                                    </div>
+                                    <p>Курс завершен</p>
+                                </div>
+                            </div>
+                            <!-- Карточка активного курса -->
+                            <div class="course-card">
+                                <img src="https://placehold.co/600x400/22C55E/FFFFFF?text=🎨" alt="Дизайн">
+                                <div class="card-content">
+                                    <h3>Графический дизайн</h3>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar" style="width: 60%;"></div>
+                                    </div>
+                                    <p>Прогресс: 60%</p>
+                                    <a href="#" class="btn btn-primary">Продолжить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Контент таба "Мои сертификаты" -->
+                    <div id="my-certificates" class="tab-content">
+                        <ul class="certificate-list">
+                            <li>
+                                <div class="cert-info">
+                                    🏆 <h3>Сертификат: Веб-разработка</h3>
+                                    <p>Дата получения: 15.05.2024</p>
+                                </div>
+                                <a href="#" class="btn btn-secondary">Скачать PDF</a>
+                            </li>
+                            <li>
+                                <div class="cert-info">
+                                    🏆 <h3>Сертификат: Основы психологии</h3>
+                                    <p>Дата получения: 20.03.2024</p>
+                                </div>
+                                <a href="#" class="btn btn-secondary">Скачать PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 EduNova | <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Простой скрипт для переключения табов на странице профиля
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
