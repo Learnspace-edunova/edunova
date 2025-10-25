@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в аккаунт - EduNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page-bg">
+
+    <div class="login-wrapper">
+        <a href="index.html" class="logo text-center">EduNova</a>
+        <div class="login-card">
+            <h2>Вход в ваш аккаунт</h2>
+            <p>Добро пожаловать обратно!</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="remember"> Запомнить меня
+                    </label>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <!-- При клике перенаправляем на страницу профиля -->
+                <a href="profile.html" class="btn btn-primary full-width">Войти</a>
+            </form>
+            <p class="signup-link">
+                Еще нет аккаунта? <a href="#">Зарегистрироваться</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
